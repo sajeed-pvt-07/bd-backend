@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: backend
+  mongodb:
+    uri: ${DATASOURCE_URL}
+    database: ${DB_NAME}
+  data:
+    mongodb:
+      auto-index-creation: true
+
+server:
+    port: 8084
+
+app:
+  security:
+    username: ${USERNAME}
+    password: ${PASSWORD}
+    admin-username: ${ADMIN_USERNAME:}
+    admin-password: ${ADMIN_PASSWORD:}
